@@ -67,30 +67,31 @@
                 <div class="body">
                     <div class="sub-menu">
                         <ul>
-                            <li>Add Assuree</li>
-                            <li>Update Assuree</li>
-                            <li>Print Cards</li>
+                            <li><a href="add-assure.html">Add Assuree</a></li>
+                            <li><a href="">Update Assuree</a></li>
+                            <li><a href="">Print Cards</a></li>
                         </ul>
                     </div>
-                    <div class="query-builder">
-                        <div>
-                            <label for="find-by">Find By:</label>
-                            <select name="find-by" id="find-by">
-                                <option value="status">Status</option>
-                                <option value="enterprise">Enterprise</option>
-                                <option value="bureau">Bureau</option>
-                                <option value="date">Date</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="find-by">Order By:</label>
-                            <select name="find-by" id="find-by">
-                                <option value="status">A-Z</option>
-                                <option value="enterprise">Z-A</option>
-                            </select>
-                        </div>
-                    </div>
+                    
                     <div class="table-holder">
+                        <div class="query-builder">
+                            <div>
+                                <label for="find-by">Find By:</label>
+                                <select name="find-by" id="find-by">
+                                    <option value="status">Status</option>
+                                    <option value="enterprise">Enterprise</option>
+                                    <option value="bureau">Bureau</option>
+                                    <option value="date">Date</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="find-by">Order By:</label>
+                                <select name="find-by" id="find-by">
+                                    <option value="status">A-Z</option>
+                                    <option value="enterprise">Z-A</option>
+                                </select>
+                            </div>
+                        </div>
                         <table class="assure-table">
                             <thead>
                                 <tr>
@@ -421,9 +422,11 @@
                                     </td>
                                 </tr>
                             </tbody>
-                            <tfoot>
-
-                            </tfoot>
+                            <!-- <tfoot>
+                                <div class="table-control">
+                                    <button>Next Page</button>
+                                </div>
+                            </tfoot> -->
                         </table>
                     </div>
                 </div>
